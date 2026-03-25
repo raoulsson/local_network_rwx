@@ -1,0 +1,29 @@
+name: local_network_rwx
+description: >
+  Check and request the iOS Local Network permission reliably.
+  Uses NWBrowser with debounced state handling to trigger the system dialog and
+  detect whether the user granted or denied access. No-op on non-iOS platforms.
+version: 0.1.0
+homepage: https://github.com/raoulsson/local_network_rwx
+repository: https://github.com/raoulsson/local_network_rwx
+issue_tracker: https://github.com/raoulsson/local_network_rwx/issues
+
+environment:
+  sdk: ^3.11.1
+  flutter: '>=3.3.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  plugin:
+    platforms:
+      ios:
+        pluginClass: LocalNetworkRwxPlugin

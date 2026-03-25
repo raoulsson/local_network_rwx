@@ -1,6 +1,6 @@
-# local_network_rwx_example
+# Local Network RWX — Example
 
-Demonstrates how to use the local_network_rwx plugin.
+Demonstrates how to use the Local Network RWX plugin.
 
 ## Getting Started
 

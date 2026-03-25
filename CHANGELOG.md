@@ -1,3 +1,7 @@
+## 1.0.2
+
+* Add entitlement disclaimer to example app UI.
+
 ## 1.0.1
 
 * Fix screenshot rendering on pub.dev (use raw GitHub URL).

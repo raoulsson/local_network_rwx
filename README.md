@@ -186,11 +186,15 @@ This library is used in the [Gemma App](https://apps.apple.com/app/gemma-app/id6
 
 **User grants permission (green path):**
 
-[![User says yes](https://raw.githubusercontent.com/raoulsson/local_network_rwx/master/resources/ios-app-settings.png)](https://raw.githubusercontent.com/raoulsson/local_network_rwx/master/resources/user-says-yes-first.mp4)
+<a href="https://raw.githubusercontent.com/raoulsson/local_network_rwx/master/resources/user-says-yes-first.mp4">
+  <img src="https://raw.githubusercontent.com/raoulsson/local_network_rwx/master/resources/gemma-app-icon.png" alt="User says yes — watch video" width="25%">
+</a>
 
 **User denies permission, then re-enables in Settings (red path):**
 
-[![User says no](https://raw.githubusercontent.com/raoulsson/local_network_rwx/master/resources/ios-app-settings.png)](https://raw.githubusercontent.com/raoulsson/local_network_rwx/master/resources/user-first-says-no.mp4)
+<a href="https://raw.githubusercontent.com/raoulsson/local_network_rwx/master/resources/user-first-says-no.mp4">
+  <img src="https://raw.githubusercontent.com/raoulsson/local_network_rwx/master/resources/gemma-app-icon.png" alt="User says no — watch video" width="25%">
+</a>
 
 ## 📮 Support
 

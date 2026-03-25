@@ -184,28 +184,19 @@ subsequent `.failed(PolicyDenied)` to cancel the premature `.ready`.
 
 This library is used in the [Gemma App](https://apps.apple.com/app/gemma-app/id6739215260) by [Gemma Design](https://gemma-design.ch) — a lighting control app that discovers and communicates with smart furniture via the local network.
 
-**User grants permission (green path):**
+**User grants permission (green path):** The user selects "Allow", then device search proceeds normally.
 
-<br>
 <a href="https://raw.githubusercontent.com/raoulsson/local_network_rwx/master/resources/user-says-yes-first.mp4" target="_blank">
-  <img src="https://raw.githubusercontent.com/raoulsson/local_network_rwx/master/resources/play-button.svg" alt="Download and watch — user grants permission" width="24%">
+  <img src="https://raw.githubusercontent.com/raoulsson/local_network_rwx/master/resources/play-button.svg?v=2" alt="Download and watch — user grants permission" width="24%">
 </a>
 
-The user selects "Allow", then device search proceeds normally.
-
-<br>
 <br>
 
-**User denies permission, then re-enables in Settings (red path):**
+**User denies permission, then re-enables in Settings (red path):** The user doesn't grant permission, then is redirected to the app's Settings page. Permission takes effect on restart of the app.
 
-<br>
 <a href="https://raw.githubusercontent.com/raoulsson/local_network_rwx/master/resources/user-first-says-no.mp4" target="_blank">
-  <img src="https://raw.githubusercontent.com/raoulsson/local_network_rwx/master/resources/play-button.svg" alt="Download and watch — user denies then re-enables" width="24%">
+  <img src="https://raw.githubusercontent.com/raoulsson/local_network_rwx/master/resources/play-button.svg?v=2" alt="Download and watch — user denies then re-enables" width="24%">
 </a>
-
-The user doesn't grant permission, then is redirected to the app's Settings page. Permission takes effect on restart of the app.
-
-<br>
 
 ## 📮 Support
 

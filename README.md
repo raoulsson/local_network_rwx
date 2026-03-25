@@ -187,13 +187,13 @@ This library is used in the [Gemma App](https://apps.apple.com/app/gemma-app/id6
 **User grants permission (green path):**
 
 <a href="https://raw.githubusercontent.com/raoulsson/local_network_rwx/master/resources/user-says-yes-first.mp4" target="_blank">
-  <img src="https://raw.githubusercontent.com/raoulsson/local_network_rwx/master/resources/play-button.svg" alt="Watch video — user grants permission" width="50%">
+  <img src="https://raw.githubusercontent.com/raoulsson/local_network_rwx/master/resources/play-button.svg" alt="Watch video — user grants permission" width="25%" style="padding: 10px 0;">
 </a>
 
 **User denies permission, then re-enables in Settings (red path):**
 
 <a href="https://raw.githubusercontent.com/raoulsson/local_network_rwx/master/resources/user-first-says-no.mp4" target="_blank">
-  <img src="https://raw.githubusercontent.com/raoulsson/local_network_rwx/master/resources/play-button.svg" alt="Watch video — user denies then re-enables" width="50%">
+  <img src="https://raw.githubusercontent.com/raoulsson/local_network_rwx/master/resources/play-button.svg" alt="Watch video — user denies then re-enables" width="25%" style="padding: 10px 0;">
 </a>
 
 ## 📮 Support

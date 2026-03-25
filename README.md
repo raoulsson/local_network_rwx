@@ -40,6 +40,16 @@ On non-iOS platforms all methods return `granted` / no-op.
 > Settings toggle), you **must** install the app via TestFlight or
 > ad-hoc distribution.
 
+> [!TIP]
+> **How to verify the entitlement is active**
+>
+> Go to **Settings → [Your App]** on the device. If the Multicast Networking
+> entitlement is correctly provisioned, you will see a **"Local Network"**
+> toggle row. If that row is missing, your app does not have the entitlement
+> yet — request it from Apple before proceeding.
+>
+> <img src="resources/ios-app-settings.png" alt="iOS Settings showing the Local Network toggle" width="300">
+
 ## Setup
 
 ### 1. Add the dependency

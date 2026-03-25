@@ -48,7 +48,8 @@ On non-iOS platforms all methods return `granted` / no-op.
 > toggle row. If that row is missing, your app does not have the entitlement
 > yet — request it from Apple before proceeding.
 >
-> <img src="resources/ios-app-settings.png" alt="iOS Settings showing the Local Network toggle" width="300">
+>
+> ![iOS Settings showing the Local Network toggle](resources/ios-app-settings.png)
 
 ## Setup
 

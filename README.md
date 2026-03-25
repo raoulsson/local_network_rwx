@@ -49,7 +49,7 @@ On non-iOS platforms all methods return `granted` / no-op.
 > yet — request it from Apple before proceeding.
 >
 >
-> ![iOS Settings showing the Local Network toggle](resources/ios-app-settings.png)
+> <img src="resources/ios-app-settings.png" alt="iOS Settings showing the Local Network toggle" width="60%">
 
 ## Setup
 

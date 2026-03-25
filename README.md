@@ -191,6 +191,7 @@ This library is used in the [Gemma App](https://apps.apple.com/app/gemma-app/id6
   <img src="https://raw.githubusercontent.com/raoulsson/local_network_rwx/master/resources/play-button.svg" alt="Watch video — user grants permission" width="10%">
 </a>
 <br>
+<br>
 
 **User denies permission, then re-enables in Settings (red path):**
 

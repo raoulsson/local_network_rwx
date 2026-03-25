@@ -1,3 +1,7 @@
+## 1.0.5
+
+* README: play button thumbnails for demo videos, spacing fixes.
+
 ## 1.0.4
 
 * Add "In action" section with demo videos (green/red permission paths).

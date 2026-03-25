@@ -49,7 +49,7 @@ On non-iOS platforms all methods return `granted` / no-op.
 > yet — request it from Apple before proceeding.
 >
 >
-> <img src="resources/ios-app-settings.png" alt="iOS Settings showing the Local Network toggle" width="60%">
+> <img src="https://raw.githubusercontent.com/raoulsson/local_network_rwx/master/resources/ios-app-settings.png" alt="iOS Settings showing the Local Network toggle" width="60%">
 
 ## Setup
 

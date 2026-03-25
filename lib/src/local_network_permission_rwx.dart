@@ -2,7 +2,7 @@ import 'dart:io';
 
 import 'package:flutter/services.dart';
 
-import 'local_network_status.dart';
+import 'local_network_status_rwx.dart';
 
 /// Check and request the iOS Local Network permission.
 ///

@@ -79,6 +79,24 @@ class _MyAppState extends State<MyApp> {
                 onPressed: () => LocalNetworkPermissionRWX.openSettings(),
                 child: const Text('Open Settings'),
               ),
+              const SizedBox(height: 48),
+              const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 24),
+                child: Text(
+                  'Note: This example app does not have the Multicast '
+                  'Networking entitlement (com.apple.developer.networking.multicast) '
+                  'from Apple, so the permission dialog will not appear and '
+                  'results will be unreliable.\n\n'
+                  'Use this code as a reference for your own project that '
+                  'has the entitlement granted by Apple.',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 13,
+                    color: Colors.orange,
+                    fontStyle: FontStyle.italic,
+                  ),
+                ),
+              ),
             ],
           ),
         ),

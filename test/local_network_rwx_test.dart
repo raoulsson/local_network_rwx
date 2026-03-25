@@ -25,15 +25,15 @@ void main() {
         .setMockMethodCallHandler(channel, null);
   });
 
-  test('LocalNetworkStatus enum has expected values', () {
-    expect(LocalNetworkStatus.values.length, 3);
-    expect(LocalNetworkStatus.granted.name, 'granted');
-    expect(LocalNetworkStatus.denied.name, 'denied');
-    expect(LocalNetworkStatus.unknown.name, 'unknown');
+  test('LocalNetworkStatusRWX enum has expected values', () {
+    expect(LocalNetworkStatusRWX.values.length, 3);
+    expect(LocalNetworkStatusRWX.granted.name, 'granted');
+    expect(LocalNetworkStatusRWX.denied.name, 'denied');
+    expect(LocalNetworkStatusRWX.unknown.name, 'unknown');
   });
 
   test('getBroadcastAddress returns a String or null', () async {
-    final address = await LocalNetworkPermission.getBroadcastAddress();
+    final address = await LocalNetworkPermissionRWX.getBroadcastAddress();
     // On test host (macOS/Linux) this should find a local interface.
     // On CI it might be null — both are valid.
     if (address != null) {

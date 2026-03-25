@@ -74,23 +74,23 @@ Both entries are **required**:
 import 'package:local_network_rwx/local_network_rwx.dart';
 
 // Optional: send a UDP broadcast primer for older iOS versions (14.x, 15.x).
-final broadcast = await LocalNetworkPermission.getBroadcastAddress();
-await LocalNetworkPermission.sendUdpPrimer(broadcastAddress: broadcast);
+final broadcast = await LocalNetworkPermissionRWX.getBroadcastAddress();
+await LocalNetworkPermissionRWX.sendUdpPrimer(broadcastAddress: broadcast);
 
 // Check / request permission. Shows the system dialog on first call.
-final status = await LocalNetworkPermission.requestPermission(
+final status = await LocalNetworkPermissionRWX.requestPermission(
   serviceType: '_yourservice._tcp',
 );
 
 switch (status) {
-  case LocalNetworkStatus.granted:
+  case LocalNetworkStatusRWX.granted:
     // Proceed with device discovery.
     break;
-  case LocalNetworkStatus.denied:
+  case LocalNetworkStatusRWX.denied:
     // Show a dialog explaining how to enable in Settings.
-    await LocalNetworkPermission.openSettings();
+    await LocalNetworkPermissionRWX.openSettings();
     break;
-  case LocalNetworkStatus.unknown:
+  case LocalNetworkStatusRWX.unknown:
     // Could not determine — try networking anyway (fail-open).
     break;
 }
@@ -98,31 +98,31 @@ switch (status) {
 
 ## API
 
-### `LocalNetworkPermission.requestPermission()`
+### `LocalNetworkPermissionRWX.requestPermission()`
 
 Triggers the iOS Local Network permission dialog (if not yet shown) and returns
-the user's decision as a `LocalNetworkStatus`.
+the user's decision as a `LocalNetworkStatusRWX`.
 
 | Parameter | Type | Default | Description |
 |---|---|---|---|
 | `serviceType` | `String` | *required* | Bonjour service type (e.g. `_myapp._tcp`) |
 | `timeoutSeconds` | `int` | `30` | Max seconds to wait for user response |
 
-### `LocalNetworkPermission.sendUdpPrimer()`
+### `LocalNetworkPermissionRWX.sendUdpPrimer()`
 
 Sends a single UDP broadcast packet to prime the iOS network stack. Optional
 but improves reliability on some iOS versions.
 
-### `LocalNetworkPermission.getBroadcastAddress()`
+### `LocalNetworkPermissionRWX.getBroadcastAddress()`
 
 Returns the directed broadcast address (e.g. `192.168.1.255`) for the first
 usable local IPv4 interface, or `null`.
 
-### `LocalNetworkPermission.openSettings()`
+### `LocalNetworkPermissionRWX.openSettings()`
 
 Opens the iOS Settings app at the current app's settings page.
 
-### `LocalNetworkStatus`
+### `LocalNetworkStatusRWX`
 
 | Value | Meaning |
 |---|---|

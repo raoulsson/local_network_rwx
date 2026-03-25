@@ -1,5 +1,5 @@
 /// Result of a local network permission check.
-enum LocalNetworkStatus {
+enum LocalNetworkStatusRWX {
   /// Permission was granted (or the platform has no such restriction).
   granted,
 

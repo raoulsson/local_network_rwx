@@ -33,13 +33,13 @@ import 'local_network_status.dart';
 ///
 /// ## Non-iOS platforms
 ///
-/// All methods return [LocalNetworkStatus.granted] on Android, macOS, Windows,
+/// All methods return [LocalNetworkStatusRWX.granted] on Android, macOS, Windows,
 /// Linux, and web — the concept does not exist there.
-class LocalNetworkPermission {
+class LocalNetworkPermissionRWX {
   static const MethodChannel _channel =
       MethodChannel('local_network_rwx');
 
-  LocalNetworkPermission._();
+  LocalNetworkPermissionRWX._();
 
   /// Triggers the iOS Local Network permission dialog (if not yet shown) and
   /// returns the user's decision.
@@ -49,18 +49,18 @@ class LocalNetworkPermission {
   ///
   /// [timeoutSeconds] is the maximum time (in seconds) to wait for the user
   /// to respond to the system dialog. Defaults to 30. After this timeout the
-  /// method returns [LocalNetworkStatus.granted] (fail-open) to avoid
+  /// method returns [LocalNetworkStatusRWX.granted] (fail-open) to avoid
   /// blocking the app indefinitely.
   ///
   /// If permission was already granted or denied in a prior session, iOS will
   /// not show the dialog again — the method simply detects the current state.
   ///
-  /// On non-iOS platforms this always returns [LocalNetworkStatus.granted].
-  static Future<LocalNetworkStatus> requestPermission({
+  /// On non-iOS platforms this always returns [LocalNetworkStatusRWX.granted].
+  static Future<LocalNetworkStatusRWX> requestPermission({
     required String serviceType,
     int timeoutSeconds = 30,
   }) async {
-    if (!Platform.isIOS) return LocalNetworkStatus.granted;
+    if (!Platform.isIOS) return LocalNetworkStatusRWX.granted;
 
     try {
       final result = await _channel.invokeMethod<String>(
@@ -72,16 +72,16 @@ class LocalNetworkPermission {
       );
       switch (result) {
         case 'granted':
-          return LocalNetworkStatus.granted;
+          return LocalNetworkStatusRWX.granted;
         case 'denied':
-          return LocalNetworkStatus.denied;
+          return LocalNetworkStatusRWX.denied;
         default:
-          return LocalNetworkStatus.unknown;
+          return LocalNetworkStatusRWX.unknown;
       }
     } on PlatformException {
-      return LocalNetworkStatus.unknown;
+      return LocalNetworkStatusRWX.unknown;
     } on MissingPluginException {
-      return LocalNetworkStatus.unknown;
+      return LocalNetworkStatusRWX.unknown;
     }
   }
 

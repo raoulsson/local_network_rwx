@@ -13,20 +13,20 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  LocalNetworkStatus _status = LocalNetworkStatus.unknown;
+  LocalNetworkStatusRWX _status = LocalNetworkStatusRWX.unknown;
   bool _checking = false;
 
   Future<void> _checkPermission() async {
     setState(() => _checking = true);
 
     // Optional: send a UDP primer to increase reliability on older iOS versions.
-    final broadcast = await LocalNetworkPermission.getBroadcastAddress();
-    await LocalNetworkPermission.sendUdpPrimer(broadcastAddress: broadcast);
+    final broadcast = await LocalNetworkPermissionRWX.getBroadcastAddress();
+    await LocalNetworkPermissionRWX.sendUdpPrimer(broadcastAddress: broadcast);
 
     // Request / check the permission via NWBrowser.
     // Replace '_myapp._tcp' with your own Bonjour service type.
     // It must also be listed in your Info.plist under NSBonjourServices.
-    final status = await LocalNetworkPermission.requestPermission(
+    final status = await LocalNetworkPermissionRWX.requestPermission(
       serviceType: '_myapp._tcp',
     );
 
@@ -46,15 +46,15 @@ class _MyAppState extends State<MyApp> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Icon(
-                _status == LocalNetworkStatus.granted
+                _status == LocalNetworkStatusRWX.granted
                     ? Icons.check_circle
-                    : _status == LocalNetworkStatus.denied
+                    : _status == LocalNetworkStatusRWX.denied
                         ? Icons.cancel
                         : Icons.help_outline,
                 size: 64,
-                color: _status == LocalNetworkStatus.granted
+                color: _status == LocalNetworkStatusRWX.granted
                     ? Colors.green
-                    : _status == LocalNetworkStatus.denied
+                    : _status == LocalNetworkStatusRWX.denied
                         ? Colors.red
                         : Colors.grey,
               ),
@@ -76,7 +76,7 @@ class _MyAppState extends State<MyApp> {
               ),
               const SizedBox(height: 16),
               TextButton(
-                onPressed: () => LocalNetworkPermission.openSettings(),
+                onPressed: () => LocalNetworkPermissionRWX.openSettings(),
                 child: const Text('Open Settings'),
               ),
             ],

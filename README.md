@@ -188,8 +188,11 @@ This library is used in the [Gemma App](https://apps.apple.com/app/gemma-app/id6
 
 <br>
 <a href="https://raw.githubusercontent.com/raoulsson/local_network_rwx/master/resources/user-says-yes-first.mp4" target="_blank">
-  <img src="https://raw.githubusercontent.com/raoulsson/local_network_rwx/master/resources/play-button.svg" alt="Watch video — user grants permission" width="24%">
+  <img src="https://raw.githubusercontent.com/raoulsson/local_network_rwx/master/resources/play-button.svg" alt="Download and watch — user grants permission" width="24%">
 </a>
+
+The user selects "Allow", then device search proceeds normally.
+
 <br>
 <br>
 
@@ -197,8 +200,11 @@ This library is used in the [Gemma App](https://apps.apple.com/app/gemma-app/id6
 
 <br>
 <a href="https://raw.githubusercontent.com/raoulsson/local_network_rwx/master/resources/user-first-says-no.mp4" target="_blank">
-  <img src="https://raw.githubusercontent.com/raoulsson/local_network_rwx/master/resources/play-button.svg" alt="Watch video — user denies then re-enables" width="24%">
+  <img src="https://raw.githubusercontent.com/raoulsson/local_network_rwx/master/resources/play-button.svg" alt="Download and watch — user denies then re-enables" width="24%">
 </a>
+
+The user doesn't grant permission, then is redirected to the app's Settings page. Permission takes effect on restart of the app.
+
 <br>
 
 ## 📮 Support

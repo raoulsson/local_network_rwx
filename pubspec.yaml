@@ -3,7 +3,7 @@ description: >
   Check and request the iOS Local Network permission reliably.
   Uses NWBrowser with debounced state handling to trigger the system dialog and
   detect whether the user granted or denied access. No-op on non-iOS platforms.
-version: 1.0.2
+version: 1.0.3
 homepage: https://github.com/raoulsson/local_network_rwx
 repository: https://github.com/raoulsson/local_network_rwx
 issue_tracker: https://github.com/raoulsson/local_network_rwx/issues

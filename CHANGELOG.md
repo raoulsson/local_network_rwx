@@ -1,3 +1,8 @@
+## 1.0.3
+
+* Rename source files to *_rwx.dart for consistency.
+* README formatting fix.
+
 ## 1.0.2
 
 * Add entitlement disclaimer to example app UI.

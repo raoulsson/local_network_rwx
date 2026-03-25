@@ -15,7 +15,8 @@ whether the user granted or denied access.
 
 On non-iOS platforms all methods return `granted` / no-op.
 
-> **Prerequisites — Multicast Networking Entitlement**
+> [!CAUTION]
+> **Multicast Networking Entitlement Required**
 >
 > Your app **must** have the
 > [`com.apple.developer.networking.multicast`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.networking.multicast)
@@ -26,6 +27,18 @@ On non-iOS platforms all methods return `granted` / no-op.
 >
 > Without this entitlement, NWBrowser and Bonjour discovery will silently
 > fail and the Local Network permission dialog will never appear.
+
+> [!WARNING]
+> **Testing — Use TestFlight, Not Xcode**
+>
+> When an app is launched from Xcode or the IDE, iOS **automatically grants**
+> Local Network permission without showing the system dialog. You will not
+> see the permission prompt and `requestPermission()` will always return
+> `granted`.
+>
+> To test the actual permission flow (dialog appearance, deny handling,
+> Settings toggle), you **must** install the app via TestFlight or
+> ad-hoc distribution.
 
 ## Setup
 
@@ -49,8 +62,11 @@ Add these entries to `ios/Runner/Info.plist`:
 </array>
 ```
 
-The Bonjour service type you pass to `requestPermission()` **must** appear in
-the `NSBonjourServices` array, otherwise the NWBrowser will silently fail.
+Both entries are **required**:
+- `NSLocalNetworkUsageDescription` — the user-facing explanation shown in the
+  system permission dialog. Without it, iOS will not prompt the user at all.
+- `NSBonjourServices` — the Bonjour service type you pass to
+  `requestPermission()` **must** appear here, otherwise NWBrowser silently fails.
 
 ## Usage
 
@@ -136,6 +152,21 @@ subsequent `.failed(PolicyDenied)` to cancel the premature `.ready`.
 - **iOS 18**: Known Apple bug where in-memory and persistent state can desync
   ([FB14321888](https://developer.apple.com/bug-reporting/))
 
+## 📮 Support
+
+- 📧 Email: hello@raoulsson.com
+- 🐛 Issues: [GitHub Issues](https://github.com/raoulsson/local_network_rwx/issues)
+- 💬 Discussions: [GitHub Discussions](https://github.com/raoulsson/local_network_rwx/discussions)
+
+## 💚 Funding
+
+- 🏅 https://github.com/sponsors/raoulsson
+- 🪙 https://www.buymeacoffee.com/raoulsson
+
 ## License
 
 BSD 3-Clause. See [LICENSE](LICENSE).
+
+---
+
+**Happy Networking! 🎉**

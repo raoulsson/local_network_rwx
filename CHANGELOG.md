@@ -1,3 +1,9 @@
+## 1.0.4
+
+* Add "In action" section with demo videos (green/red permission paths).
+* Add iOS version notes about app restart after Settings toggle.
+* Link to Gemma App on App Store.
+
 ## 1.0.3
 
 * Rename source files to *_rwx.dart for consistency.

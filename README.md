@@ -166,6 +166,32 @@ subsequent `.failed(PolicyDenied)` to cancel the premature `.ready`.
 - **iOS 18**: Known Apple bug where in-memory and persistent state can desync
   ([FB14321888](https://developer.apple.com/bug-reporting/))
 
+> [!NOTE]
+> **App restart after toggling Local Network in Settings**
+>
+> When the user changes the Local Network toggle in **Settings → [Your App]**,
+> iOS automatically kills and restarts your app. This means you do not need to
+> handle the permission change at runtime — the app will relaunch with the
+> updated permission state.
+>
+> If you use `openSettings()` to send the user to Settings, avoid calling
+> `exit()` beforehand. Keeping the app alive lets iOS show the **"Back to
+> [Your App]"** breadcrumb in the top-left of the status bar, giving the user
+> a clear way to navigate back. Once they toggle the permission, iOS will
+> kill and restart the app automatically.
+
+## In action
+
+This library is used in the [Gemma App](https://apps.apple.com/app/gemma-app/id6739215260) by [Gemma Design](https://gemma-design.ch) — a lighting control app that discovers and communicates with smart furniture via the local network.
+
+**User grants permission (green path):**
+
+[![User says yes](https://raw.githubusercontent.com/raoulsson/local_network_rwx/master/resources/ios-app-settings.png)](https://raw.githubusercontent.com/raoulsson/local_network_rwx/master/resources/user-says-yes-first.mp4)
+
+**User denies permission, then re-enables in Settings (red path):**
+
+[![User says no](https://raw.githubusercontent.com/raoulsson/local_network_rwx/master/resources/ios-app-settings.png)](https://raw.githubusercontent.com/raoulsson/local_network_rwx/master/resources/user-first-says-no.mp4)
+
 ## 📮 Support
 
 - 📧 Email: hello@raoulsson.com

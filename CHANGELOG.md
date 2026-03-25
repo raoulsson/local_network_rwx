@@ -1,4 +1,4 @@
-## 0.1.0
+## 1.0.0
 
 * Initial release.
 * `requestPermission()` — trigger and detect the iOS Local Network permission dialog via NWBrowser.

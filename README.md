@@ -57,7 +57,7 @@ On non-iOS platforms all methods return `granted` / no-op.
 
 ```yaml
 dependencies:
-  local_network_rwx: ^0.1.0
+  local_network_rwx: ^1.0.0
 ```
 
 ### 2. Configure Info.plist

@@ -1,3 +1,7 @@
+## 1.0.6
+
+* README: green play buttons, video descriptions, section heading update.
+
 ## 1.0.5
 
 * README: play button thumbnails for demo videos, spacing fixes.

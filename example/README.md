@@ -2,6 +2,18 @@
 
 Demonstrates how to use the Local Network RWX plugin.
 
+> **Prerequisites — Multicast Networking Entitlement**
+>
+> Your app **must** have the
+> [`com.apple.developer.networking.multicast`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.networking.multicast)
+> entitlement before any of this will work. Apple does not grant it
+> automatically — you must request it at:
+>
+> **https://developer.apple.com/contact/request/networking-multicast**
+>
+> Without this entitlement, NWBrowser and Bonjour discovery will silently
+> fail and the Local Network permission dialog will never appear.
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.

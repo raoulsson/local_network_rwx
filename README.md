@@ -188,7 +188,7 @@ This library is used in the [Gemma App](https://apps.apple.com/app/gemma-app/id6
 
 <br>
 <a href="https://raw.githubusercontent.com/raoulsson/local_network_rwx/master/resources/user-says-yes-first.mp4" target="_blank">
-  <img src="https://raw.githubusercontent.com/raoulsson/local_network_rwx/master/resources/play-button.svg" alt="Watch video — user grants permission" width="10%">
+  <img src="https://raw.githubusercontent.com/raoulsson/local_network_rwx/master/resources/play-button.svg" alt="Watch video — user grants permission" width="24%">
 </a>
 <br>
 <br>
@@ -197,7 +197,7 @@ This library is used in the [Gemma App](https://apps.apple.com/app/gemma-app/id6
 
 <br>
 <a href="https://raw.githubusercontent.com/raoulsson/local_network_rwx/master/resources/user-first-says-no.mp4" target="_blank">
-  <img src="https://raw.githubusercontent.com/raoulsson/local_network_rwx/master/resources/play-button.svg" alt="Watch video — user denies then re-enables" width="10%">
+  <img src="https://raw.githubusercontent.com/raoulsson/local_network_rwx/master/resources/play-button.svg" alt="Watch video — user denies then re-enables" width="24%">
 </a>
 <br>
 

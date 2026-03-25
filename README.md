@@ -180,7 +180,7 @@ subsequent `.failed(PolicyDenied)` to cancel the premature `.ready`.
 > a clear way to navigate back. Once they toggle the permission, iOS will
 > kill and restart the app automatically.
 
-## In action
+## In Action on an App that relies on this library
 
 This library is used in the [Gemma App](https://apps.apple.com/app/gemma-app/id6739215260) by [Gemma Design](https://gemma-design.ch) — a lighting control app that discovers and communicates with smart furniture via the local network.
 

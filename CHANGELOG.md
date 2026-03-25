@@ -1,3 +1,7 @@
+## 1.0.1
+
+* Fix screenshot rendering on pub.dev (use raw GitHub URL).
+
 ## 1.0.0
 
 * Initial release.

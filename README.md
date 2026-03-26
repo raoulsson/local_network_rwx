@@ -186,7 +186,7 @@ subsequent `.failed(PolicyDenied)` to cancel the premature `.ready`.
 
 This library is used in the [Gemma App](https://apps.apple.com/app/gemma-app/id6739215260) by [Gemma Design](https://gemma-design.ch) — a lighting control app that discovers and communicates with smart furniture via the local network.
 
-<div style="clear: both;"></div>
+<br clear="all">
 
 **User grants permission (green path):** The user selects "Allow", then device search proceeds normally.
 

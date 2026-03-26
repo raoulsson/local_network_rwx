@@ -180,7 +180,9 @@ subsequent `.failed(PolicyDenied)` to cancel the premature `.ready`.
 > a clear way to navigate back. Once they toggle the permission, iOS will
 > kill and restart the app automatically.
 
-## In Action on an App that relies on this library
+## "In Action" on an App that relies on this library
+
+<a href="https://gemma-design.ch"><img src="https://raw.githubusercontent.com/raoulsson/local_network_rwx/master/resources/gemma-connect-device-pre-screen.jpeg" alt="Gemma App" width="30%" align="right"></a>
 
 This library is used in the [Gemma App](https://apps.apple.com/app/gemma-app/id6739215260) by [Gemma Design](https://gemma-design.ch) — a lighting control app that discovers and communicates with smart furniture via the local network.
 

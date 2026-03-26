@@ -1,3 +1,7 @@
+## 1.0.8
+
+* README: screenshot links to App Store instead of website.
+
 ## 1.0.7
 
 * README: inline Gemma screenshot, layout cleanup.

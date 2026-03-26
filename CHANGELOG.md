@@ -1,3 +1,7 @@
+## 1.0.7
+
+* README: inline Gemma screenshot, layout cleanup.
+
 ## 1.0.6
 
 * README: green play buttons, video descriptions, section heading update.

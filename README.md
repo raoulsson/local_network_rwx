@@ -2,6 +2,8 @@
 
 Check and request the **iOS Local Network permission** from Flutter.
 
+[![Pub Version](https://img.shields.io/pub/v/local_network_rwx?style=flat-square)](https://pub.dev/packages/local_network_rwx)
+
 On iOS 14+, apps must be granted Local Network access before they can discover
 or communicate with devices via UDP broadcast, mDNS/Bonjour, or multicast.
 Apple provides no direct API to query the permission state. The standard

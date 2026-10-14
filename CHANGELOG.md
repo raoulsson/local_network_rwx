@@ -1,3 +1,7 @@
+## 1.0.9
+
+* iOS now supports Swift Package Manager (sources moved to ios/local_network_rwx/Sources/local_network_rwx/, Package.swift added). CocoaPods still works. No API change.
+
 ## 1.0.8
 
 * README: screenshot links to App Store instead of website.

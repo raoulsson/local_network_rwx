@@ -36,8 +36,7 @@ import 'local_network_status_rwx.dart';
 /// All methods return [LocalNetworkStatusRWX.granted] on Android, macOS, Windows,
 /// Linux, and web — the concept does not exist there.
 class LocalNetworkPermissionRWX {
-  static const MethodChannel _channel =
-      MethodChannel('local_network_rwx');
+  static const MethodChannel _channel = MethodChannel('local_network_rwx');
 
   LocalNetworkPermissionRWX._();
 

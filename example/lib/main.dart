@@ -49,14 +49,14 @@ class _MyAppState extends State<MyApp> {
                 _status == LocalNetworkStatusRWX.granted
                     ? Icons.check_circle
                     : _status == LocalNetworkStatusRWX.denied
-                        ? Icons.cancel
-                        : Icons.help_outline,
+                    ? Icons.cancel
+                    : Icons.help_outline,
                 size: 64,
                 color: _status == LocalNetworkStatusRWX.granted
                     ? Colors.green
                     : _status == LocalNetworkStatusRWX.denied
-                        ? Colors.red
-                        : Colors.grey,
+                    ? Colors.red
+                    : Colors.grey,
               ),
               const SizedBox(height: 16),
               Text(

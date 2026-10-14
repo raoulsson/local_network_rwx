@@ -10,14 +10,14 @@ void main() {
   setUp(() {
     TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
         .setMockMethodCallHandler(channel, (MethodCall call) async {
-      if (call.method == 'requestPermission') {
-        return 'granted';
-      }
-      if (call.method == 'openSettings') {
-        return true;
-      }
-      return null;
-    });
+          if (call.method == 'requestPermission') {
+            return 'granted';
+          }
+          if (call.method == 'openSettings') {
+            return true;
+          }
+          return null;
+        });
   });
 
   tearDown(() {

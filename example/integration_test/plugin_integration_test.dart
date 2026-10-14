@@ -6,8 +6,9 @@ import 'package:local_network_rwx/local_network_rwx.dart';
 void main() {
   IntegrationTestWidgetsFlutterBinding.ensureInitialized();
 
-  testWidgets('requestPermission returns a LocalNetworkStatusRWX',
-      (WidgetTester tester) async {
+  testWidgets('requestPermission returns a LocalNetworkStatusRWX', (
+    WidgetTester tester,
+  ) async {
     final status = await LocalNetworkPermissionRWX.requestPermission(
       serviceType: '_myapp._tcp',
     );

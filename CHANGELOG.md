@@ -1,6 +1,8 @@
 ## 1.0.9
 
 * iOS now supports Swift Package Manager (sources moved to ios/local_network_rwx/Sources/local_network_rwx/, Package.swift added). CocoaPods still works. No API change.
+* Shorter pubspec description: pub.dev allows at most 180 characters, the old one had 216.
+* Code formatted with `dart format`.
 
 ## 1.0.8
 

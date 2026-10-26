@@ -1,3 +1,7 @@
+## 1.0.10
+
+* iOS: `PrivacyInfo.xcprivacy` is now shipped as a resource bundle (`local_network_rwx_privacy`) for CocoaPods and as a processed resource for Swift Package Manager. Before, the podspec's `**/*` source glob handed it to the compiler, which Xcode reported as "no rule to process file ... PrivacyInfo.xcprivacy of type 'text.xml'", and the manifest never reached the app. No code or API change.
+
 ## 1.0.9
 
 * iOS now supports Swift Package Manager (sources moved to ios/local_network_rwx/Sources/local_network_rwx/, Package.swift added). CocoaPods still works. No API change.

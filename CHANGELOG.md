@@ -1,3 +1,7 @@
+## 1.0.11
+
+* README: setup snippet now asks for `^1.0.11` instead of `^1.0.0`, so a copy-paste no longer allows versions without the iOS privacy-manifest fix and Swift Package Manager support.
+
 ## 1.0.10
 
 * iOS: `PrivacyInfo.xcprivacy` is now shipped as a resource bundle (`local_network_rwx_privacy`) for CocoaPods and as a processed resource for Swift Package Manager. Before, the podspec's `**/*` source glob handed it to the compiler, which Xcode reported as "no rule to process file ... PrivacyInfo.xcprivacy of type 'text.xml'", and the manifest never reached the app. No code or API change.
